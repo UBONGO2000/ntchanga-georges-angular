@@ -1,0 +1,16 @@
+<div class="card">
+      <h2>Moniteur de Sonde Thermique</h2>
+      
+      <div class="status-panel">
+        <p><strong>Statut :</strong> {{ status }}</p>
+        
+        @if (currentTemp !== null) {
+          <p class="temp">Température : <strong>{{ currentTemp }} °C</strong></p>
+        }
+      </div>
+
+      <div class="actions">
+        <button (click)="startSensor()" [disabled]="isActive">Démarrer la mesure</button>
+        <button (click)="stopSensor()" [disabled]="!isActive" class="danger">Arrêt d'urgence</button>
+      </div>
+    </div>

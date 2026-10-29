@@ -1,0 +1,5 @@
+<p>Taches completer: {{ completedTasks() }} sur {{ DAILY_GOAL }}</p>
+<p>Progression: {{ progressPercentage() }}%</p>
+
+<button (click)="incrementTasks()">+1 Tâche complétée</button>
+<button (click)="resetTasks()">Reinitialiser</button>
