@@ -8,5 +8,5 @@ export const routes: Routes = [
     {
         path: 'productivity',
         loadComponent: () => import('./components/productivity-tracker-component/productivity-tracker-component').then(m => m.ProductivityTrackerComponent)
-    } 
+    }
 ];
